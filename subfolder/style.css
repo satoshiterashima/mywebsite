@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2em;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  padding: 32px;
+  padding-left: 20px;
+  color:gray;
+  margin-left: 200px;
+  background-color:whitesmoke;
+}
+
+#fixed-chick {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  width: 20%;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  width: 200px;
+  height: 200px;
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+  margin: 1px;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(5, 0, 5, 0.5);
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  word-wrap: break-word;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.project h3 {
+  margin: 0;
+  transform: translateY(-50px);
+  transition: transform 0.3s ease-out;
+}
+
+.overlay:hover h3 {
+  transform: translateY(0);
+}
+
+.projext p {
+  margin: 0;
+}
+
+.project-1 {
+  background-image: url("https://cdn.asagei.com/asajo/uploads/2016/01/20160110hiyokogashi.jpg");
+}
+
+.project-2 {
+  background-image: url("https://cdn.asagei.com/syokuraku/uploads/2018/09/20180929-karaage-fes01.jpg");
+}
+
+.project-3 {
+  background-image: url("https://tshop.r10s.jp/hc7/cabinet/comolife-07/2591bu.jpg?fitin=275:275");
+}
+
+.project-4 {
+  background-image: url("https://s3-ap-northeast-1.amazonaws.com/static.amanaimages.com/imgroom/rf_preview640/10341/10341004775.jpg");
+}
+
+.project-5 {
+  background-image: url("https://meateatingmilitaryman.com/wp-content/uploads/2018/06/air-fryer-fried-chicken-480x375.jpg");
+}
+
+.project-6 {
+  background-image: url("https://cdn.asagei.com/syokuraku/uploads/2018/09/20180929-karaage-fes07.jpg");
+}
+
+a {
+  color: white;
+  transform: translateY(-50px);
+  transition: transform 0.3s ease-out;
+}
+
+a:hover {
+  background-position: -100% 0;
+  background-color: rgba(0, 191, 255, 0.5);
+  transform: translateY(0);
+}
+
+.project-grid-colum {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  border: 5px solid skyblue;
+}
+
+.experience {
+  width: 400px;
+  height: 225px;
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+  margin: 8px;
+  text-align: center;
+}
+
+.performance1 {
+  background-image: url("https://cdn.glitch.com/088360a2-191e-4434-a6f4-3405e4692e58%2FIMG_8986.JPG?v=1569986426604");
+}
+
+.performance2 {
+  background-image: url("https://cdn.glitch.com/088360a2-191e-4434-a6f4-3405e4692e58%2F20190802-DSC_9787.jpg?v=1569985832779");
+}
+
+.performance3 {
+  background-image: url("https://cdn.glitch.com/088360a2-191e-4434-a6f4-3405e4692e58%2FIMG_2115.JPG?v=1569986536853");
+}
+
+.work1 {
+  background-image: url("http://img.youtube.com/vi/c-q96uH5tE8/maxresdefault.jpg");
+}
+
+.work2 {
+  background-color: black;
+}
+
+.work3 {
+  background-image: url("http://img.youtube.com/vi/dygx6npF8kU/maxresdefault.jpg");
+}
+
+.work4 {
+  background-color: black;
+}
+
+/*I don't know why it works(´･_･`)*/
+.pianobox {
+  position: fixed;
+  flex-direction: column;
+  top: 20%;
+  left: 0;
+  margin: 0;
+  display: flex;
+  background-color: white;
+  flex-wrap: nowrap;
+  height: 400px;
+  width: 200px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.whitekey {
+  height: 10%;
+  width: 100%;
+  position: relative;
+
+}
+
+.blackkey {
+  background-color: black;
+  position: relative;
+  height: 8%;
+  width: 60%;
+}
+
+.keyoverlay {
+  background-color: skyblue;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  
+}
+
+
+.keyoverlay:hover {
+  opacity: 1;
+}
+
+.menu {
+  background-color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: skyblue;
+}
+
+.header {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  color: white;
+  background-color: skyblue;
+  background-repeat: repeat;
+  background-size: 40px 40px;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.first_images img {
+  text-align: left;
+  width: 30%;
+  float: left;
+}
+
+.images img {
+  text-align: left;
+  width: 30%;
+}
+
+.clear {
+  clear: both;
+}
+
+.float {
+  float: left;
+  margin-right: 20px;
+}
